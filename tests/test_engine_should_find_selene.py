@@ -19,7 +19,3 @@ def test_empty_serp(browser_chrome):
     search_form.send_keys(Keys.ENTER)
     serp_text = browser.find_element(By.ID, "search").text
     assert len(serp_text) == 0, f'Serp element is not empty'
-
-
-
-
